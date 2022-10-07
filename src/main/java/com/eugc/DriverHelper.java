@@ -190,7 +190,7 @@ public class DriverHelper {
         driver.manage().timeouts().pageLoadTimeout(TIMEOUT, TimeUnit.SECONDS);
         //initialPages();
         try{
-            driver.get("https://sede.administracionespublicas.gob.es/icpplus/index.html");
+            driver.get("https://icp.administracionespublicas.gob.es/icpplustieb/index.html");
         }
         catch (org.openqa.selenium.TimeoutException e){
             throw new DDOSException("We have likely triggered DDOS Protection. Hibernating for an hour.");
@@ -208,7 +208,7 @@ public class DriverHelper {
         driver.manage().timeouts().pageLoadTimeout(TIMEOUT, TimeUnit.SECONDS);
         //initialPages();
         try{
-            driver.get("https://sede.administracionespublicas.gob.es/icpplus/index.html");
+            driver.get("https://icp.administracionespublicas.gob.es/icpplustieb/index.html");
         }
         catch (org.openqa.selenium.TimeoutException e){
             throw new DDOSException("We have likely triggered DDOS Protection. Hibernating for an hour.");
@@ -252,7 +252,7 @@ public class DriverHelper {
         driver.manage().timeouts().pageLoadTimeout(TIMEOUT, TimeUnit.SECONDS);
         //initialPages();
         try{
-            driver.get("https://sede.administracionespublicas.gob.es/icpplus/index.html");
+            driver.get("https://icp.administracionespublicas.gob.es/icpplustieb/index.html");
         }
         catch (org.openqa.selenium.TimeoutException e){
             throw new DDOSException("We have likely triggered DDOS Protection. Hibernating for an hour.");
@@ -270,7 +270,7 @@ public class DriverHelper {
         driver.manage().timeouts().pageLoadTimeout(TIMEOUT, TimeUnit.SECONDS);
         //initialPages();
         try{
-            driver.get("https://sede.administracionespublicas.gob.es/icpplus/index.html");
+            driver.get("https://icp.administracionespublicas.gob.es/icpplustieb/index.html");
         }
         catch (org.openqa.selenium.TimeoutException e){
             throw new DDOSException("We have likely triggered DDOS Protection. Hibernating for an hour.");
@@ -278,7 +278,7 @@ public class DriverHelper {
     }
     
     private void initialPages(){
-        driver.get("https://sede.administracionespublicas.gob.es/");
+        driver.get("https://icp.administracionespublicas.gob.es/");
         WebDriverWait wait = new WebDriverWait(driver, TIMEOUT);
         Actions a = new Actions(driver);
         wait.until(ExpectedConditions.elementToBeClickable(By.id("mf-appmenu--submenu__0")));
